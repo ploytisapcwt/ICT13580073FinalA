@@ -50,6 +50,7 @@ namespace ICT13580073FinalA
                 addressEditor.Text = product.Address.ToString();
                 statuPicker.SelectedItem = product.Status;
                 childrenLabel.Text = product.Children.ToString();
+               
               
 
 			}

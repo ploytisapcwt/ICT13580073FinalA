@@ -94,9 +94,6 @@
                         Text="เงินเดือน"
                         FontSize="12" />
                  
-                     <Label
-                        x:Name="salaryLabel"
-                    />
                     <Entry
                     x:Name="salaryEntry"
                         FontSize="12"
