@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="ICT13580073FinalA.ProductNewPage">
+    <Grid>
+        <ScrollView>
+            <Frame
+                Margin="20"
+                CornerRadius="10"
+                BackgroundColor="Maroon"
+                VerticalOptions="Start">
+                <StackLayout
+                    Orientation="Vertical">
+                    <Label
+                        x:Name="titleLable"
+                        Text="เพิ่มประวัติใหม่"
+                        HorizontalTextAlignment="Center"
+                        FontAttributes="Bold" />
+                    <Label
+                        Text="ชื่อ"
+                        x:Name="nameLable"
+                        FontSize="12" />
+                    <Entry
+                        x:Name="nameEntry"
+                        Placeholder="ชื่อ"
+                        FontSize="12" />
+                    <Label
+                        Text="นามสกุล"
+                        x:Name="lastnameLable"
+                        FontSize="12" />
+                    <Entry
+                        x:Name="lastnameEntry"
+                        Placeholder="นามสกุล"
+                        FontSize="12" />
+                    <Label
+                        Text="อายุ"
+                        x:Name="ageLable"
+                        FontSize="14" />
+                    <Entry
+                        x:Name="ageEntry"
+                        Placeholder="อายุ"
+                        Keyboard="Numeric"
+                        FontSize="12" />
+                     <Label
+                        Text="เพศ"
+                        x:Name="genderLable"
+                        FontSize="12" />
+                    <Picker
+                    x:Name="genderPicker"
+                    Title="เลือกเพศ"/>
+                    
+                    <Label
+                        Text="แผนก"
+                        x:Name="departmentLable"
+                        FontSize="12" />
+                    <Picker
+                        x:Name="departmentPicker"
+                        Title="เลือกแผนก" />
+                    <Label
+                        Text="เบอร์โทร"
+                        x:Name="telLable"
+                        FontSize="12" />
+                    <Entry
+                        x:Name="telEntry"
+                        Placeholder="เบอร์โทร"
+                        Keyboard="Telephone"
+                        FontSize="12" />
+                    <Label
+                        Text="อีเมลล์"
+                        x:Name="emailLable"
+                        FontSize="12" />
+                    <Entry
+                        x:Name="emailEntry"
+                        Placeholder="อีเมลล์"
+                        Keyboard="Email" />
+                    <Label
+                        Text="ที่อยู่"
+                        x:Name="addressLable"
+                        FontSize="12" />
+                    <Editor
+                        x:Name="addressEditor"
+                        HeightRequest="75"
+                        BackgroundColor="#B0FFFFFF" />
+                    <Label
+                        Text="สถานะ"
+                        x:Name="stutasLable"
+                        FontSize="12" />
+                    <Picker
+                        x:Name="statuPicker"
+                        Title="สถานะแต่งงาน" />
+                    <Label
+                        x:Name="salaryLabel"
+                        Text="เงินเดือน"
+                        FontSize="12" />
+                 
+                     <Label
+                        x:Name="salaryLabel"
+                    />
+                    <Entry
+                    x:Name="salaryEntry"
+                        FontSize="12"
+                        Placeholder="เงินเดือน"
+                        
+                    />
+                    
+                    <Label
+                       
+                        Text="จำนวนบุตร"
+                        FontSize="12" />
+                    <Stepper
+                        Maximum="10"
+                        Minimum="0"
+                        Value="0"
+                        Increment="1"
+                        x:Name="myStepper" />
+                    <Label
+                        x:Name="childrenLabel"/>
+                    <Button
+                        x:Name="cancelButton"
+                        Text="ยกเลิก"
+                        TextColor="White"
+                        BackgroundColor="Red" />
+                    <Button
+                        x:Name="saveButton"
+                        Text="บันทึก"
+                        TextColor="White"
+                        BackgroundColor="Green"
+                        Grid.Column="1" />
+                </StackLayout>
+            </Frame>
+        </ScrollView>
+    </Grid>
+</ContentPage>
